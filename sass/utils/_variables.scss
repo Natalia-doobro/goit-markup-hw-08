@@ -1,0 +1,110 @@
+/* raleway-700 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/raleway-v19-latin_cyrillic-ext_cyrillic-700.svg#Raleway")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-regular.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-500 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-500.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-500.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-700.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/roboto-v27-latin_cyrillic-ext_cyrillic-700.svg#Roboto")
+      format("svg"); /* Legacy iOS */
+}
+/*Палитра
+цвет теекста заголовка - #FFFFFF;
+цвет теекста подзаголовков - #212121;
+цвет теекста - #757575;
+текст силки при наведении - #2196F3;
+текст в подвале - #FFFFFF; rgba(255, 255, 255, 0.6);
+акцент -  #2196F3;
+*/
+:root {
+  --body-color: #ffffff;
+  --text-color: #757575;
+  --title-color: #212121;
+  --hover-color: #2196f3;
+  --section-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+  --dark-bg-text-color: #ffffff;
+  --button-color: #2196f3;
+  --dark-dg-filters-color: #f5f4fa;
+  --icon-color: #afb1b8;
+  --button-close-color: #000000;
+  --animation-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

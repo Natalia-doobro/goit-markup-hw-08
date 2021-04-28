@@ -1,0 +1,81 @@
+/*иконки карточек*/
+.section__subtitle {
+  margin-bottom: 10px;
+
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: center;
+}
+.section__text-card {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: center;
+}
+.social-icons {
+  display: inline-flex;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--dark-bg-text-color);
+  transition: background-color var(--animation-duration);
+
+  &:hover .icon,
+  &:focus .icon,
+  &:active .icon {
+    fill: var(--dark-bg-text-color);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--hover-color);
+  }
+}
+
+.icon {
+  fill: var(--icon-color);
+  transition: fill var(--animation-duration);
+}
+
+/*иконки футера*/
+.join__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--dark-bg-text-color);
+}
+
+.join-social__link {
+  --dark-bg-text-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animation-duration);
+
+  &:hover .social__icon--active,
+  &:focus .social__icon--active,
+  &:active .social__icon--active {
+    fill: var(--icon-color);
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--hover-color);
+  }
+}
+.social__icon--active {
+  --icon-color: #ffffff;
+  transition: fill var(--animation-duration);
+}

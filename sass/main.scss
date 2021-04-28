@@ -1,0 +1,60 @@
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1140px;
+@import "./utils/variables";
+/* Главная */
+@import "./components/common";
+/*---------------------------------------------------------------------------------------------------*/
+/*Шапка сторінки (верхня лінія)*/
+@import "./components/page-header";
+/*Логотип*/
+@import "./components/logo";
+/*Навигацыя*/
+@import "./components/main-nav";
+/*Номер телефона и электронная почта*/
+@import "./components/contact";
+/*---------------------------------------------------------------------------------------------------*/
+/*Унікальний контент сторінки*/
+@import "./components/main";
+/*Шапка*/
+@import "./components/hero";
+/*Особливість*/
+@import "./components/feature";
+/*Чим ми займаемося*/
+@import "./components/hobbies";
+/*Наша команда*/
+@import "./components/team";
+/*иконки карточек*/
+@import "./components/social-icon";
+/*Постоянные клиенты*/
+@import "./components/clients";
+/*---------------------------------------------------------------------------------------------------*/
+/*Підвал сторінки*/
+@import "./components/footer";
+/*Логотип*/
+/*Адрес, номер телефона и электронная почта*/
+@import "./components/adress";
+/*иконки футера*/
+/*Форма подписка*/
+@import "./components/footer-form";
+/*---------------------------------------------------------------------------------------------------*/
+/* страница портфолио */
+@import "./components/portfolio";
+/* кнопки фильтра */
+@import "./components/filters";
+/*Проэкт*/
+@import "./components/project";
+/*---------------------------------------------------------------------------------------------------*/
+/*Модальное окно*/
+/*бекдроп*/
+@import "./components/backdrop";
+/*модалка*/
+@import "./components/modal";
+/*модалка форма заполнения*/
+@import "./components/form";
+/*кастомный чекбокс*/
+@import "./components/agreement";
+/*кастомный чекбокс*/
+@import "./components/agreement";
+/*кнопка закрытия*/
+@import "./components/button-submit";

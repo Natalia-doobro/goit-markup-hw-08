@@ -1,0 +1,27 @@
+/*Унікальний контент сторінки*/
+.section .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  &.not {
+    padding-top: 0;
+  }
+}
+.section__title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  margin-bottom: 10px;
+}
+.container {
+  & > .section__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+.section__text {
+  color: var(--text-color);
+  font-weight: 400;
+}

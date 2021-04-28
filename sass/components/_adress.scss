@@ -1,0 +1,17 @@
+/*Адрес, номер телефона и электронная почта*/
+.adress {
+  color: var(--dark-bg-text-color);
+  font-style: normal;
+}
+.adress__text {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+.footer__contact__link {
+  --text-color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+.footer__contact__item:not(:last-child) {
+  margin-bottom: 4px;
+}

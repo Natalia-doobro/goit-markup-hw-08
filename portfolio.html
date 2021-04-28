@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio</title>
+    <!--нормалізатор -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!--Стилі-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <!-- Шапка сторінки (верхня лінія) -->
+    <header class="header">
+        <div class="container header-main-nav">
+            <nav class="main-nav">
+                <!--Логотип-->
+                <a href="./index.html" class="logo link"><span class="logo__web">Web</span>Studio</a>
+    
+                <!--Навигацыя-->
+                <ul class="menu list zeroing">
+                    <li class="menu__item"><a href="./index.html" class="link menu__link">Студия</a></li>
+                    <li class="menu__item menu__current"><a href="./portfolio.html" class="link menu__link menu__current">Портфолио</a></li>
+                    <li class="menu__item"><a href="" class="link menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <!--Номер телефона и электронная почта-->
+            <ul class="contact list zeroing">
+                <li class="contact__item ">
+                    <a href="mailto:info@devstudio.com" class="link contact__link">
+                        <svg class="icon contact__icon icon__mail">
+                            <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contact-item">
+                    <a href="tel:+380961111111" class="link contact__link">
+                        <svg class="icon contact__icon">
+                            <use href="./images/icons.svg/sprite.svg#icon-vector"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="portfolio">
+            <div class="container portfolio-container">
+                <!--Портфоліо-->
+                <h1 class="section-title portfolio-title zeroing">Портфоліо</h1>
+
+                <!--Кнопки фильтра-->
+                <ul class="filters list zeroing">
+                    <li class="filters__item"><button type="button" class="filters__button">Все</button></li>
+                    <li class="filters__item"><button type="button" class="filters__button">Веб-сайты</button></li>
+                    <li class="filters__item"><button type="button" class="filters__button">Приложения</button></li>
+                    <li class="filters__item"><button type="button" class="filters__button">Дизайн</button></li>
+                    <li class="filters__item"><button type="button" class="filters__button">Маркетинг</button></li>
+                </ul>
+            
+
+                <!--Поект-->
+                <ul class="project list zeroing">
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-1.jpg" alt="Технокряк" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Технокряк</h2>
+                                <p class="section__text project__text zeroing">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">    
+                                <img class="img" src="./images/images/img-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Постер New Orlean vs Golden Star</h2>
+                                <p class="section__text project__text  zeroing">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-3.jpg" alt="Логотип ресторана Seafood" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Ресторан Seafood</h2>
+                                <p class="section__text project__text zeroing">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-4.jpg" alt="Проект Prime" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Проект Prime</h2>
+                                <p class="section__text project__text zeroing">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-5.jpg" alt="Проект Boxes" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Проект Boxes</h2>
+                                <p class="section__text project__text zeroing">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-6.jpg" alt="Inspiration has no Borders" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Inspiration has no Borders</h2>
+                                <p class="section__text project__text zeroing">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-7.jpg" alt="Издание Limited Edition" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Издание Limited Edition</h2>
+                                <p class="section__text project__text zeroing">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-8.jpg" alt="Проект LAB" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Проект LAB</h2>
+                                <p class="section__text project__text zeroing">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="project__item">
+                        <a href="" class="link">
+                            <div class="image">
+                                <img class="img" src="./images/images/img-9.jpg" alt="Growing Business" width="370" />
+                                <div class="overlay-project">
+                                    <p class="overlay-project__text zeroing"></p>
+                                </div>
+                            </div>
+                            <div class="text-image">
+                                <h2 class="section__title project__title zeroing">Growing Business</h2>
+                                <p class="section__text project__text zeroing">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Підвал сторінки -->
+    <footer class="footer">
+        <div class="container footer__container flexbox">
+            <div class="footer-position">
+                <!--Логотип-->
+                <a href="./index.html" class="logo link footer-logo"><span class="logo__web">Web</span>Studio</a>
+    
+                <!--Адрес, номер телефона и электронная почта-->
+                <address class="adress">
+                    <p class="adress__text zeroing">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="footer-contact list zeroing">
+                        <li class="footer-сontact__item"><a href="mailto:info@devstudio.com"
+                                class="link footer-contact__link">info@devstudio.com</a></li>
+                        <li class="footer-contact__item"><a href="tel:+380961111111" class="link footer-contact__link">+38
+                                096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="join footer-position">
+                <h2 class="join__title zeroing">присоединяйтесь</h2>
+                <ul class="social-icons list zeroing">
+                    <li class="social-icons__item">
+                        <a href="" class="social__link join-social__link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon social__icon--active" width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="" class="social__link join-social__link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon social__icon--active" width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="" class="social__link join-social__link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon social__icon--active" width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a href="" class="social__link join-social__link link" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon social__icon--active" width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="block-form footer-position">
+                <form class="footer-form" name="mailing" autocomplete="on" novalidate>
+                    <div class="footer-form__field">
+                        <label for="subscription" class="footer-form__lible">Подпишитесь на рассылку</label>
+                        <input class="footer-form__input" type="email" name="email" id="subscription"
+                            placeholder="E-mail" />
+                    </div>
+                    <button type="submit" class="button footer-button">
+                        Подписаться
+                        <svg class="icon button-submit__icon" width="24" height="24">
+                            <use href="./images/icons.svg/sprite.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

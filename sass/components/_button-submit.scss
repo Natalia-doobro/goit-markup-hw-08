@@ -1,0 +1,14 @@
+/*кнопка закрытия*/
+.button-submit {
+  padding: 10px 55px;
+
+  transition: background-color var(--animation-duration),
+    box-shadow var(--animation-duration);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--dark-bg-text-color);
+    --button-color: #188ce8;
+  }
+}

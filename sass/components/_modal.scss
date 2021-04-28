@@ -1,0 +1,44 @@
+/*модалка*/
+.is-hidden .modal {
+  opacity: 0;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--body-color);
+
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: opacity var(--animation-duration);
+}
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--dark-bg-text-color);
+  transition: fill var(--animation-duration);
+
+  &__icon {
+    fill: var(--button-close-color);
+  }
+  &__icon:hover,
+  &__icon:focus {
+    fill: var(--hover-color);
+    cursor: pointer;
+  }
+}

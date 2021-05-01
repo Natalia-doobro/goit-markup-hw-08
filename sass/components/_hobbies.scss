@@ -1,10 +1,10 @@
 /*Чим ми займаемося*/
-.hobbies-items {
+/*.hobbies-items {
   display: flex;
   flex-wrap: wrap;
-}
+}*/
 .hobbies__list {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  /*flex-basis: calc((100% - 30px * 2) / 3);*/
   z-index: 1;
   position: relative;
   width: 370px;

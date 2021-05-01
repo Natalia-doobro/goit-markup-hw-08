@@ -13,9 +13,6 @@
   color: var(--title-color);
 }
 .form-field {
-  display: flex;
-  flex-direction: column;
-
   &:not(:last-child) {
     margin-bottom: 10px;
   }

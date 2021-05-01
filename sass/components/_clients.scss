@@ -3,16 +3,14 @@
   text-align: center;
 }
 .clients {
-  display: inline-flex;
-
   &__icons-item:not(:last-child) {
     margin-right: 30px;
   }
 }
 .clients__link {
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;

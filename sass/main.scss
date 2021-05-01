@@ -1,9 +1,6 @@
-$mobile: 320px;
-$tablet: 768px;
-$desktop: 1140px;
 @import "./utils/variables";
 /* Главная */
-@import "./components/common";
+@import "./base/common";
 /*---------------------------------------------------------------------------------------------------*/
 /*Шапка сторінки (верхня лінія)*/
 @import "./components/page-header";

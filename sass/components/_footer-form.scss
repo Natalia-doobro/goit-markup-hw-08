@@ -1,15 +1,27 @@
 /*Форма подписка*/
-.footer-form {
-  width: 570px;
-  height: 86px;
-  /*display: flex;
-  flex-direction: row;
-  align-items: flex-end;*/
+.block-form {
+  display: flex;
+
+  @media screen and (max-width: $desktop) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-/*.footer-form__field {
+.footer-form {
+  width: 450px;
+
+  @media screen and (min-width: $desktop) {
+    width: 570px;
+    height: 86px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+.footer-form__field {
   display: flex;
   flex-direction: column;
-}*/
+}
 .footer-form__lible {
   font-weight: 700;
   font-size: 14px;
@@ -20,8 +32,8 @@
 }
 
 .footer-form__input {
-  width: 358px;
-  height: 42.44px;
+  width: 450px;
+  height: 50px;
 
   font-weight: 400;
   font-size: 16px;
@@ -46,7 +58,6 @@
   &::placeholder {
     display: flex;
     align-items: center;
-
     color: rgba(255, 255, 255, 0.6);
   }
   &:-webkit-autofill,
@@ -55,12 +66,22 @@
     -webkit-text-fill-color: currentColor;
     -webkit-box-shadow: 0 0 0px 1000px var(--dark-bg-color) inset;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    height: 42.44px;
+  }
 }
 
 .footer-button {
   padding: 10px 29px;
   height: 42.44px;
-  margin-left: 12px;
+  margin-top: 20px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 .footer-button__icon {
   fill: var(--dark-bg-text-color);

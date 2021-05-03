@@ -4,20 +4,42 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
+
+  @media screen and (max-width: $desktop) {
+    text-align: center;
+  }
 }
+.flexbox {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    flex-wrap: wrap;
+  }
+}
+
 .footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/*.flexbox {
-  display: flex;
-  align-items: baseline;
-}*/
 .footer-position {
-  max-width: 231px;
   flex-basis: 50%;
+  margin-left: auto;
+  margin-right: auto;
 
   &:not(:last-child) {
-    margin-right: 70px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 231px;
+    margin-left: 0;
+
+    &:not(:last-child) {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
   }
 }

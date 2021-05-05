@@ -7,9 +7,6 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
-
   background-color: var(--body-color);
 
   transform: translate(-50%, -50%);
@@ -17,15 +14,29 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: opacity var(--animation-duration);
+
+  @media screen and (max-width: $tablet) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .button-close {
   position: absolute;
   top: 8px;
   right: 8px;
 
-  /*display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;

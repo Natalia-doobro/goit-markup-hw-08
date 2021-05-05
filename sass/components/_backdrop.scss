@@ -10,6 +10,10 @@
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--animation-duration);
+
+  @media screen and (max-width: $desktop) {
+    overflow-y: scroll;
+  }
 }
 .backdrop.is-hidden {
   opacity: 0;

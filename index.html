@@ -23,17 +23,24 @@
             <nav class="main-nav">
                 <!--Логотип-->
                 <a href="./index.html" class="logo link"><span class="logo__web">Web</span>Studio</a>
-
+        
                 <!--Навигацыя--> 
-                <ul class="menu list zeroing">
+                <ul class="menu menu--desktop list zeroing">
                     <li class="menu__item menu__current"><a href="./index.html" class="link menu__link menu__current">Студия</a></li>
                     <li class="menu__item"><a href="./portfolio.html" class="link menu__link">Портфолио</a></li>
                     <li class="menu__item"><a href="" class="link menu__link">Контакты</a></li>
                 </ul>
+                <!--переключатель мобильного меню-->
+                <button type="button" class="button-nav is-open close" aria-expanded="false" data-menu-button>
+                    <svg class="icon button-nav__icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons.svg/sprite.svg#icon-menu-40px"></use>
+                        <use class="icon-close" href="./images/icons.svg/sprite.svg#icon-close-40px"></use>
+                    </svg>
+                </button>
             </nav>
 
-            <!--Номер телефона и электронная почта-->
-            <ul class="contact list zeroing">
+            <!--Номер телефона и электронная -->
+            <ul class="contact contact--desktop list zeroing">
                 <li class="contact__item ">
                     <a href="mailto:info@devstudio.com" class="link contact__link">
                             <svg class="icon contact__icon icon__mail">
@@ -50,9 +57,37 @@
                         +38 096 111 11 11
                     </a>
                 </li>
-            </ul>     
+            </ul>
         </div>
     </header>
+    <!-- Шапка сторінки (верхня лінія) для мобилного -->
+    <div class="mobile-menu close" data-menu>
+            <!--Навигацыя-->
+            <ul class="menu-mobile list zeroing">
+                <li class="menu-mobile__item"><a href="./index.html" class="link menu-mobile__link">Студия</a></li>
+                <li class="menu-mobile__item"><a href="./portfolio.html" class="link menu-mobile__link">Портфолио</a></li>
+                <li class="menu-mobile__item"><a href="" class="link menu-mobile__link">Контакты</a></li>
+            </ul>
+        
+            <!--Номер телефона и электронная -->
+            <ul class="contact-mobile list zeroing">
+                <li class="contact-mobile__item">
+                    <a href="tel:+380961111111" class="link contact-mobile__link link--color">+38 096 111 11 11</a>
+                </li>
+                <li class="contact-mobile__item ">
+                    <a href="mailto:info@devstudio.com" class="link contact-mobile__link">info@devstudio.com</a>
+                </li>
+            </ul>
+        
+            <ul class="social-mobile list zeroing">
+                <li class="social-mobile__item">Instagram <span class="social-mobile__dash">|</span></li>
+                <li class="social-mobile__item">Twitter   <span class="social-mobile__dash">|</span></li>
+                <li class="social-mobile__item">Facebook  <span class="social-mobile__dash">|</span></li>
+                <li class="social-mobile__item">LinkedIn</li>
+            </ul>
+        
+    </div>
+
     
     <!-- Унікальний контент сторінки -->
     <main>
@@ -113,7 +148,7 @@
         </section>
 
         <!--Чим ми займаемося-->
-        <section class="section">
+        <section class="section hobbies">
             <div class="container not">
                 <h2 class="section__title zeroing">Чем мы занимаемся</h2>
 
@@ -495,5 +530,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

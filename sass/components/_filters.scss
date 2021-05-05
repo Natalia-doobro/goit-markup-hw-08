@@ -12,8 +12,8 @@
 .filters__item:not(:last-child) {
   margin-right: 8px;
 
-  @media screen and (max-width: $tablet) {
-    &:nth-child(-n + 3) {
+  &:nth-child(-n + 3) {
+    @media screen and (max-width: $tablet) {
       margin-bottom: 15px;
     }
   }

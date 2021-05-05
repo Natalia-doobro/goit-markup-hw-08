@@ -1,4 +1,9 @@
 /*Чим ми займаемося*/
+.hobbies {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
 .hobbies-items {
   display: flex;
   flex-wrap: wrap;

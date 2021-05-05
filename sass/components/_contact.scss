@@ -1,8 +1,11 @@
 /*Номер телефона и электронная почта*/
 .contact {
-  /*display: flex;*/
-  margin-left: auto;
-  align-items: center;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+
+    margin-left: auto;
+    align-items: center;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -17,12 +20,19 @@
     fill: var(--hover-color);
   }
 }
+@media screen and (max-width: $tablet) {
+  .contact--desktop {
+    display: none;
+  }
+}
 .contact__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  /*display: flex;
-  align-content: center;*/
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-content: center;
+  }
 }
 .contact__icon {
   margin-right: 10px;

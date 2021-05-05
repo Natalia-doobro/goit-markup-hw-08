@@ -30,7 +30,9 @@
   margin-right: auto;
 
   &:not(:last-child) {
-    margin-bottom: 60px;
+    @media screen and (max-width: $desktop) {
+      margin-bottom: 60px;
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -39,7 +41,6 @@
 
     &:not(:last-child) {
       margin-right: 70px;
-      margin-bottom: 0;
     }
   }
 }

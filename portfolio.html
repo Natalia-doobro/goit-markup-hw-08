@@ -20,36 +20,70 @@
             <nav class="main-nav">
                 <!--Логотип-->
                 <a href="./index.html" class="logo link"><span class="logo__web">Web</span>Studio</a>
-    
-                <!--Навигацыя-->
-                <ul class="menu list zeroing">
+        
+                <!--Навигацыя--> 
+                <ul class="menu menu--desktop list zeroing">
                     <li class="menu__item"><a href="./index.html" class="link menu__link">Студия</a></li>
                     <li class="menu__item menu__current"><a href="./portfolio.html" class="link menu__link menu__current">Портфолио</a></li>
                     <li class="menu__item"><a href="" class="link menu__link">Контакты</a></li>
                 </ul>
+                <!--переключатель мобильного меню-->
+                <button type="button" class="button-nav is-open close" aria-expanded="false" data-menu-button>
+                    <svg class="icon button-nav__icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons.svg/sprite.svg#icon-menu-40px"></use>
+                        <use class="icon-close" href="./images/icons.svg/sprite.svg#icon-close-40px"></use>
+                    </svg>
+                </button>
             </nav>
-    
-            <!--Номер телефона и электронная почта-->
-            <ul class="contact list zeroing">
+
+            <!--Номер телефона и электронная -->
+            <ul class="contact contact--desktop list zeroing">
                 <li class="contact__item ">
                     <a href="mailto:info@devstudio.com" class="link contact__link">
-                        <svg class="icon contact__icon icon__mail">
-                            <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com
+                            <svg class="icon contact__icon icon__mail">
+                                <use href="./images/icons.svg/sprite.svg#icon-envelope"></use>
+                            </svg>
+                        info@devstudio.com 
                     </a>
                 </li>
                 <li class="contact-item">
                     <a href="tel:+380961111111" class="link contact__link">
-                        <svg class="icon contact__icon">
-                            <use href="./images/icons.svg/sprite.svg#icon-vector"></use>
-                        </svg>
+                            <svg class="icon contact__icon">
+                                <use href="./images/icons.svg/sprite.svg#icon-vector"></use>
+                            </svg>
                         +38 096 111 11 11
                     </a>
                 </li>
             </ul>
         </div>
     </header>
+    <!-- Шапка сторінки (верхня лінія) для мобилного -->
+    <div class="mobile-menu close" data-menu>
+            <!--Навигацыя-->
+            <ul class="menu-mobile list zeroing">
+                <li class="menu-mobile__item"><a href="./index.html" class="link menu-mobile__link">Студия</a></li>
+                <li class="menu-mobile__item"><a href="./portfolio.html" class="link menu-mobile__link">Портфолио</a></li>
+                <li class="menu-mobile__item"><a href="" class="link menu-mobile__link">Контакты</a></li>
+            </ul>
+        
+            <!--Номер телефона и электронная -->
+            <ul class="contact-mobile list zeroing">
+                <li class="contact-mobile__item">
+                    <a href="tel:+380961111111" class="link contact-mobile__link link--color">+38 096 111 11 11</a>
+                </li>
+                <li class="contact-mobile__item ">
+                    <a href="mailto:info@devstudio.com" class="link contact-mobile__link">info@devstudio.com</a>
+                </li>
+            </ul>
+        
+            <ul class="social-mobile list zeroing">
+                <li class="social-mobile__item">Instagram <span class="social-mobile__dash">|</span></li>
+                <li class="social-mobile__item">Twitter   <span class="social-mobile__dash">|</span></li>
+                <li class="social-mobile__item">Facebook  <span class="social-mobile__dash">|</span></li>
+                <li class="social-mobile__item">LinkedIn</li>
+            </ul>
+        
+    </div>
 
     <main class="main">
         <section class="portfolio">
@@ -77,7 +111,7 @@
                                     <p class="overlay-project__text zeroing">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
                             </div>
-                            <div class="text-image">
+                            <div class="text-image text-image--tablet">
                                 <h2 class="section__title project__title zeroing">Технокряк</h2>
                                 <p class="section__text project__text zeroing">Веб-сайт</p>
                             </div>

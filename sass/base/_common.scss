@@ -4,6 +4,10 @@ body {
   color: var(--text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 .zeroing {
   margin-top: 0;
@@ -29,4 +33,9 @@ body {
   @media screen and (min-width: $desktop) {
     width: 1200px;
   }
+}
+.img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }

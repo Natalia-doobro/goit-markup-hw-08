@@ -36,6 +36,7 @@
   margin-right: 30px;
 }
 */
+
 .image {
   position: relative;
   overflow: hidden;
@@ -91,5 +92,20 @@
   &:hover .overlay-project,
   &:focus .overlay-project {
     transform: translatex(0);
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .text-image--tablet {
+    padding-bottom: 54px;
   }
 }

@@ -1,6 +1,7 @@
 /*Навигацыя*/
 .menu {
   display: flex;
+  align-items: center;
   margin-left: 88px;
 
   @media screen and (min-width: $desktop) {

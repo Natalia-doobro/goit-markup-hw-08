@@ -1,7 +1,7 @@
 .button-nav {
   display: inline-flex;
   position: relative;
-  z-index: 1;
+  z-index: 6;
   margin: 0;
   padding: 0;
   border: none;
@@ -35,7 +35,7 @@
 
   width: 100%;
   height: 100%;
-
+  z-index: 5;
   padding: 48px 40px;
   overflow-y: scroll;
   background: var(--body-color);
@@ -59,6 +59,9 @@
   line-height: 1.17;
 
   color: var(--title-color);
+  &.current {
+    color: var(--hover-color);
+  }
 }
 
 .contact-mobile {
@@ -82,7 +85,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.social-mobile__item {
+.social-mobile__link {
   font-size: 18px;
   line-height: 1.22;
   color: var(--hover-color);
@@ -90,6 +93,7 @@
 .social-mobile__dash {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+  padding: 0;
   margin-left: 10px;
   margin-right: 10px;
 }

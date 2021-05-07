@@ -28,7 +28,7 @@
 .menu__current {
   color: var(--hover-color);
 
-  .menu__item &::after {
+  &.menu__item::after {
     content: "";
     display: block;
     width: 100%;

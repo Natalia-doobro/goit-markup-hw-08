@@ -95,7 +95,7 @@
   }
 
   @media screen and (max-width: $tablet) {
-    width: 450px;
+    max-width: 450px;
   }
   @media screen and (min-width: $tablet) {
     width: 354px;

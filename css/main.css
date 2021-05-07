@@ -228,7 +228,7 @@ body.modal-open {
   color: var(--hover-color);
 }
 
-.menu__item .menu__current::after {
+.menu__current.menu__item::after {
   content: "";
   display: block;
   width: 100%;
@@ -240,7 +240,7 @@ body.modal-open {
 .button-nav {
   display: inline-flex;
   position: relative;
-  z-index: 1;
+  z-index: 6;
   margin: 0;
   padding: 0;
   border: none;
@@ -275,6 +275,7 @@ body.modal-open {
   right: 0;
   width: 100%;
   height: 100%;
+  z-index: 5;
   padding: 48px 40px;
   overflow-y: scroll;
   background: var(--body-color);
@@ -298,6 +299,10 @@ body.modal-open {
   font-size: 40px;
   line-height: 1.17;
   color: var(--title-color);
+}
+
+.menu-mobile__link.current {
+  color: var(--hover-color);
 }
 
 .contact-mobile {
@@ -325,7 +330,7 @@ body.modal-open {
   flex-wrap: wrap;
 }
 
-.social-mobile__item {
+.social-mobile__link {
   font-size: 18px;
   line-height: 1.22;
   color: var(--hover-color);
@@ -334,6 +339,7 @@ body.modal-open {
 .social-mobile__dash {
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+  padding: 0;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -472,17 +478,31 @@ body.modal-open {
 }
 
 .hero__title {
+  display: block;
+  width: 100%;
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   color: var(--dark-bg-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.37;
+  }
 }
 
 .button {
@@ -682,7 +702,7 @@ body.modal-open {
 
 @media screen and (max-width: 768px) {
   .team__list {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -1090,6 +1110,12 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 272px) {
+  .filters__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
 .filters__button {
   padding: 6px 22px;
   background: var(--dark-dg-filters-color);
@@ -1209,7 +1235,7 @@ body.modal-open {
 
 @media screen and (max-width: 768px) {
   .project__item {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
